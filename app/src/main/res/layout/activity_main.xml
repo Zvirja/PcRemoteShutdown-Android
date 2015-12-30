@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:text="@string/select_opt_to_perform"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="15dp" />
+
+    <Button
+        android:id="@+id/unlockBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/unlock_btn"
+        android:onClick="onUnlockPerform"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="10dp" />
+
+    <Button
+        android:id="@+id/sleepBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sleep_btn"
+        android:onClick="onActionPerform"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="10dp" />
+
+    <Button
+        android:id="@+id/hibernateBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_hibernate"
+        android:onClick="onActionPerform"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:id="@+id/resultMsg"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
